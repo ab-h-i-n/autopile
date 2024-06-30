@@ -4,9 +4,9 @@ import React from "react";
 
 const CatagoryCard = ({ src, title, href }) => {
   return (
-    <Link href={href} className="grid gap-5 place-items-center w-fit group">
+    <Link href={href} className="grid gap-5 place-items-center w-full group">
       {/* image  */}
-      <div className="w-[300px] h-[400px] xl:w-[400px] xl:h-[500px] overflow-hidden relative cursor-pointer rounded-lg">
+      <div className="w-[80%] h-[400px] lg:w-[300px] xl:w-[400px] xl:h-[500px] overflow-hidden relative cursor-pointer rounded-lg">
         <Image
           src={src}
           alt={title}
