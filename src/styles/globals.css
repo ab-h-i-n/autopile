@@ -23,3 +23,34 @@
   background: #ffffff; 
   cursor: grabbing;
 }
+
+
+.swiper-button-prev::before{
+  content: "";
+  background-image: url('/images/arrow-left.svg');
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 40;
+  filter: invert();
+  transform: translate(0px , -50%);
+}
+
+.swiper-button-next::before{
+  content: "";
+  background-image: url('/images/arrow-right.svg');
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  z-index: 40;
+  filter: invert();
+  transform: translate(0px,-50%);
+}
