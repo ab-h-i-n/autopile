@@ -57,7 +57,7 @@ const TopSellers = () => {
             },
           }}
           modules={[Navigation]}
-          className="mySwiper w-full md:w-[80%] h-fit relative mt-10"
+          className="mySwiper w-full md:w-[80%] h-fit relative mt-10 "
         >
           {products.map((product, index) => (
             <SwiperSlide key={index} className="h-full">
