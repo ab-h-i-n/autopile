@@ -49,11 +49,12 @@ const Header = () => {
         isOpen={isOpen}
         toggleOpen={toggleOpen}
         className={"md:hidden"}
+        color={isOpen ? "black" : "white"}
       />
 
       {/* nav  */}
       <nav
-        className={`z-40 absolute top-0 right-0 w-[95vw] h-screen flex flex-col bg-primary py-10 px-5 gap-10 transition-all ${
+        className={`${isOpen && 'text-secondary'} z-40 absolute top-0 right-0 w-[95vw] h-screen flex flex-col bg-primary py-10 px-5 gap-10 transition-all ${
           !isOpen ? "translate-x-[110%]" : 'translate-x-[10%]'
         } md:flex-row md:static md:translate-x-0 md:w-auto md:h-auto md:bg-transparent md:gap-5 md:p-0`}
       >
