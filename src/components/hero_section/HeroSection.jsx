@@ -24,7 +24,7 @@ const HeroSection = () => {
   ];
 
   return (
-    <section className="min-h-screen overflow-hidden relative text-primary">
+    <section className="min-h-screen overflow-hidden relative">
       {/* background vedio  */}
       <div className="brightness-50 h-screen overflow-hidden">
         <video
@@ -54,7 +54,7 @@ const HeroSection = () => {
           </div>
 
           {/* button  */}
-          <Button className={'my-3 md:my-5 hover:border-primary'}>Shop Now</Button>
+          <Button className={'my-3 md:my-5'}>Shop Now</Button>
 
           {/* main points  */}
           <div className="grid gap-7 md:grid-flow-col xl:w-[50%]">
