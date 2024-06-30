@@ -25,7 +25,7 @@
 }
 
 
-.swiper-button-prev::before{
+.swipe-btn-prev::before{
   content: "";
   background-image: url('/images/arrow-left.svg');
   background-size: cover;
@@ -40,7 +40,7 @@
   transform: translate(0px , -50%);
 }
 
-.swiper-button-next::before{
+.swipe-btn-next::before{
   content: "";
   background-image: url('/images/arrow-right.svg');
   background-size: cover;
@@ -53,4 +53,28 @@
   z-index: 40;
   filter: invert();
   transform: translate(0px,-50%);
+}
+
+@media screen and (min-width: 1024px){
+
+  .swipe-btn-next::before{
+    transform: translate(-20px,-50%);
+  }
+
+  .swipe-btn-prev::before{
+    transform: translate(20px,-50%);
+  }
+  
+}
+
+@media screen and (min-width: 1440px){
+
+  .swipe-btn-next::before{
+    transform: translate(-50px,-50%);
+  }
+
+  .swipe-btn-prev::before{
+    transform: translate(50px,-50%);
+  }
+  
 }
