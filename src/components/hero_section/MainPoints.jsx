@@ -3,9 +3,9 @@ import React from "react";
 
 const MainPoints = ({ src, title, desc }) => {
   return (
-    <div className="grid grid-cols-[min-content,1fr] w-fit divide-x-2 divide-teritiary">
+    <div className="grid grid-cols-[min-content,1fr] w-fit divide-x-2 divide-teritiary place-items-center">
       {/* icon  */}
-      <div className="w-[50px] aspect-square px-2">
+      <div className="w-[50px] aspect-square px-2 grid place-items-center">
         <Image src={src} alt="icon" width={50} height={50} className="invert" />
       </div>
 

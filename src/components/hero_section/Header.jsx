@@ -60,7 +60,7 @@ const Header = () => {
         {navItems.map((item, index) => (
           <Link
             onClick={toggleOpen}
-            className="cursor-pointer hover:text-teritiary hover:brightness-125 transition-all font-medium p-3"
+            className="w-fit cursor-pointer hover:text-teritiary hover:brightness-125 transition-all font-medium p-3"
             key={index}
             href={item.link}
           >
