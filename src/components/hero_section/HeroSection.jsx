@@ -26,7 +26,7 @@ const HeroSection = () => {
   return (
     <section className="min-h-screen overflow-hidden relative">
       {/* background vedio  */}
-      <div id="vedio" className="brightness-90 h-screen overflow-hidden fixed z-[0] top-0 w-screen left-0">
+      <div id="vedio" className="brightness-100 h-screen overflow-hidden fixed z-[0] top-0 w-screen left-0 ">
         <video
           className="object-cover min-h-screen  pointer-events-none absolute top-0 "
           autoPlay

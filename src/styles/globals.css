@@ -88,6 +88,7 @@
 }
 
 #vedio{
+  filter: sepia(10%) hue-rotate(190deg) saturate(200%);
   transition: all 0.5s;
   animation: move-up 1s ease;
   animation-timeline: scroll() ;
