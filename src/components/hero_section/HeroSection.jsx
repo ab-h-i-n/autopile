@@ -24,7 +24,7 @@ const HeroSection = () => {
   ];
 
   return (
-    <section className="min-h-screen overflow-hidden relative">
+    <section className="min-h-screen overflow-hidden relative text-white">
       {/* background vedio  */}
       <div className="brightness-50 h-screen overflow-hidden">
         <video

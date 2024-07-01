@@ -146,7 +146,7 @@ const Footer = () => {
             alt="logo"
             width={70}
             height={70}
-            className="invert w-10"
+            className="w-10"
           />
           <span className="font-bold text-2xl">autopile</span>
         </Link>

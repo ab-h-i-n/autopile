@@ -10,7 +10,7 @@ const ThirdSection = () => {
   ];
 
   return (
-    <section className='min-h-screen  bg-[url("/images/third-section-bg.webp")] bg-cover bg-no-repeat px-5 py-20 grid gap-5 md:px-10 lg:px-20'>
+    <section className='min-h-screen text-white  bg-[url("/images/third-section-bg.webp")] bg-cover bg-no-repeat px-5 py-20 grid gap-5 md:px-10 lg:px-20'>
       {/* titles  */}
       <div className="grid gap-3">
         {/* title  */}
