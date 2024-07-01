@@ -1,30 +1,10 @@
 import React from "react";
 import CatagoryCard from "./CatagoryCard";
 import Button from "../../common/Button";
+import Catagories from "@/data/Catagories";
 
 const ShopByCatagory = () => {
-  const catagories = [
-    {
-      src: "/images/cat-1.webp",
-      title: "Engine",
-      href: "#",
-    },
-    {
-      src: "/images/cat-2.webp",
-      title: "Suspension",
-      href: "#",
-    },
-    {
-      src: "/images/cat-3.webp",
-      title: "Brakes",
-      href: "#",
-    },
-    {
-      src: "/images/cat-4.webp",
-      title: "Transmission",
-      href: "#",
-    },
-  ];
+  const catagories = Catagories;
 
   return (
     <section className="min-h-screen px-5 py-10 grid gap-10 xl:gap-0 lg:py-20 z-10 bg-primary relative">

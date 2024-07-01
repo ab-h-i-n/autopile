@@ -1,41 +1,16 @@
 import React, { useRef } from "react";
-import ProductCard from "./ProductCard";
+import ProductCard from "../../common/ProductCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
+import Products from "@/data/Products";
 // import "swiper/css/navigation";
 
 const TopSellers = () => {
   var swiperRef = useRef();
-  const products = [
-    {
-      image: "/images/product.webp",
-      name: "Product1",
-      bestSeller: true,
-    },
-    {
-      image: "/images/product2.webp",
-      name: "Product2",
-      bestSeller: true,
-    },
-    {
-      image: "/images/product3.webp",
-      name: "Product3",
-      bestSeller: true,
-    },
-    {
-      image: "/images/product4.webp",
-      name: "Product4",
-      bestSeller: true,
-    },
-    {
-      image: "/images/product5.webp",
-      name: "Product5",
-      bestSeller: true,
-    },
-  ];
+  const products = Products;
 
-  return ( 
+  return (
     <section className="h-auto max-w-screen pt-20 pb-28 z-10 bg-primary relative">
       {/* title  */}
       <p className="text-3xl font-medium w-[80%] md:text-4xl lg:w-[50%] xl:text-5xl px-5 md:px-10 lg:px-20">
@@ -67,14 +42,24 @@ const TopSellers = () => {
           {products.map((product, index) => (
             <SwiperSlide key={index} className="h-full">
               <div className="w-full flex justify-center">
-                <ProductCard name={product.name} image={product.image} bestSeller={product.bestSeller} />
+                <ProductCard
+                  name={product.name}
+                  image={product.image}
+                  bestSeller={product.bestSeller}
+                />
               </div>
             </SwiperSlide>
           ))}
         </Swiper>
 
-        <button className="swipe-btn-next" onClick={()=>swiperRef.current.slideNext()} ></button>
-        <button className="swipe-btn-prev" onClick={()=>swiperRef.current.slidePrev()} ></button>
+        <button
+          className="swipe-btn-next"
+          onClick={() => swiperRef.current.slideNext()}
+        ></button>
+        <button
+          className="swipe-btn-prev"
+          onClick={() => swiperRef.current.slidePrev()}
+        ></button>
       </div>
     </section>
   );

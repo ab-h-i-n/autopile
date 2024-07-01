@@ -3,50 +3,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
 import ReviewCard from "./ReviewCard";
+import Reviews from "@/data/Reviews";
 const ProductReview = () => {
   var swiperRef = useRef();
-  const reviews = [
-    {
-      user: "User1",
-      createdAt: "June 5,2023",
-      image: "/images/product.webp",
-      product: "Product1",
-      reviews:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo",
-    },
-    {
-      user: "User2",
-      createdAt: "June 5,2023",
-      image: "/images/product2.webp",
-      product: "Product2",
-      reviews:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo",
-    },
-    {
-      user: "User3",
-      createdAt: "June 5,2023",
-      image: "/images/product3.webp",
-      product: "Product3",
-      reviews:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo",
-    },
-    {
-        user: "User3",
-        createdAt: "June 5,2023",
-        image: "/images/product3.webp",
-        product: "Product3",
-        reviews:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo",
-      },
-      {
-        user: "User3",
-        createdAt: "June 5,2023",
-        image: "/images/product3.webp",
-        product: "Product3",
-        reviews:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo",
-      },
-  ];
+  const reviews = Reviews;
 
   return (
     <section className="h-auto max-w-screen pt-20 pb-28 z-10 bg-primary relative">

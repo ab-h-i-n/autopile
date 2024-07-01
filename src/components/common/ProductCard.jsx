@@ -1,10 +1,11 @@
 import Image from "next/image";
 import React from "react";
-import Button from "../../common/Button";
+import Button from "./Button";
+import Link from "next/link";
 
-const ProductCard = ({ image, name, bestSeller }) => {
+const ProductCard = ({ image, name, bestSeller, id }) => {
   return (
-    <div className="w-[70%] aspect-[3/4.5] md:w-[300px] xl:w-[400px] grid gap-3 relative rounded overflow-hidden cursor-pointer group">
+    <Link href={`/product/${id}`} className="w-[70%] aspect-[3/4.5] md:w-[300px] xl:w-[400px] grid gap-3 relative rounded overflow-hidden cursor-pointer group">
       {/* bestseller tag  */}
       {bestSeller && (
         <div className="bg-teritiary px-5 py-2 absolute top-0 left-0 z-40 font-medium text-sm">
@@ -36,7 +37,7 @@ const ProductCard = ({ image, name, bestSeller }) => {
           Buy Now
         </Button>
       </div>
-    </div>
+    </Link>
   );
 };
 

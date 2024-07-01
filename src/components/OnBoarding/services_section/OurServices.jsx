@@ -1,30 +1,10 @@
 import React from "react";
 import Button from "../../common/Button";
-import CatagoryCard from "../shop_by_catagory_section/CatagoryCard";
+import ServiceCard from "./ServiceCard";
+import Services from "@/data/Services";
 
 const OurServices = () => {
-  const catagories = [
-    {
-      src: "/images/cat-1.webp",
-      title: "Service 1",
-      href: "#",
-    },
-    {
-      src: "/images/cat-2.webp",
-      title: "Service 2",
-      href: "#",
-    },
-    {
-      src: "/images/cat-3.webp",
-      title: "Service 3",
-      href: "#",
-    },
-    {
-      src: "/images/cat-4.webp",
-      title: "Service 4",
-      href: "#",
-    },
-  ];
+  const services = Services;
 
   return (
     <section className="min-h-screen px-5 py-10 grid gap-10 xl:gap-0 lg:py-20 z-10 bg-primary relative">
@@ -40,12 +20,12 @@ const OurServices = () => {
 
       {/* catagory  */}
       <div className="grid gap-5 place-items-center md:grid-cols-2 xl:grid-cols-4">
-        {catagories.map((cat, index) => (
-          <CatagoryCard
+        {services.map((service, index) => (
+          <ServiceCard
             key={index}
-            src={cat.src}
-            href={cat.href}
-            title={cat.title}
+            src={service.src}
+            href={service.href}
+            title={service.title}
           />
         ))}
       </div>
