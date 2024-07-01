@@ -1,4 +1,5 @@
 import FifthSection from "@/components/fifth_section/FifthSection";
+import Footer from "@/components/footer_section/Footer";
 import HeroSection from "@/components/hero_section/HeroSection";
 import ProductReview from "@/components/product_review_section/ProductReview";
 import ShopByCatagory from "@/components/shop_by_catagory_section/ShopByCatagory";
@@ -13,7 +14,8 @@ export default function Home() {
       <ThirdSection />
       <TopSellers />
       <FifthSection />
-      <ProductReview/>
+      <ProductReview />
+      <Footer />
     </main>
   );
 }
