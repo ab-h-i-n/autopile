@@ -26,11 +26,9 @@ const HeroSection = () => {
   return (
     <section className="min-h-screen overflow-hidden relative">
       {/* background vedio  */}
-      <div
-        id="vedio"
-        className="brightness-100 h-screen overflow-hidden fixed z-[0] top-0 w-screen left-0 "
-      >
+      <div className="brightness-100 h-screen overflow-hidden fixed z-[0] top-0 w-screen left-0 ">
         <video
+          id="vedio"
           className="object-cover min-h-screen  pointer-events-none absolute top-0 "
           autoPlay
           muted
@@ -41,7 +39,6 @@ const HeroSection = () => {
 
       {/* contents  */}
       <div className="absolute top-0 left-0 w-screen h-screen px-5 md:px-10 lg:px-14 xl:px-28">
-
         {/* titles  */}
         <div className="h-full flex flex-col justify-center gap-5 translate-y-[-50px] ">
           {/* sub title  */}

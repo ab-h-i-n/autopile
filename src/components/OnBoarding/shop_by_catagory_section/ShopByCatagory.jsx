@@ -1,10 +1,12 @@
 import React from "react";
 import CatagoryCard from "./CatagoryCard";
 import Button from "../../common/Button";
-import Catagories from "@/data/Catagories";
+import Catagories from "@/data/Categories";
+import { useRouter } from "next/navigation";
 
 const ShopByCatagory = () => {
   const catagories = Catagories;
+  const router = useRouter();
 
   return (
     <section className="min-h-screen px-5 py-10 grid gap-10 xl:gap-0 lg:py-20 z-10 bg-primary relative">
@@ -13,7 +15,7 @@ const ShopByCatagory = () => {
         {/* title  */}
         <p className="text-3xl font-semibold lg:text-4xl">Shop by Category</p>
         {/* shop button  */}
-        <Button inverse={true} className={"px-10"}>
+        <Button onClick={()=>router.push('/shop')} inverse={true} className={"px-10"}>
           Shop
         </Button>
       </div>

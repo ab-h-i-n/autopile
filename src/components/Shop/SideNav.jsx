@@ -1,4 +1,4 @@
-import Catagories from "@/data/Catagories";
+import Catagories from "@/data/Categories";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";

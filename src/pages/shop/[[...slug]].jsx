@@ -1,30 +1,36 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useRouter } from "next/router";
 import SideNav from "@/components/Shop/SideNav";
 import Header from "@/components/common/Header";
 import { usePathname } from "next/navigation";
-import Catagories from "@/data/Catagories";
+import Categories from "@/data/Categories";
 import Products from "@/data/Products";
 import ProductCard from "@/components/common/ProductCard";
 import Footer from "@/components/common/Footer";
 
 const Shop = () => {
-  const catagories = Catagories;
+  const router = useRouter();
+  const categories = Categories;
   const products = Products;
   const pathname = usePathname();
   var allProducts = products;
 
-  const catagorieTitle = catagories.find((cat) => cat.href === pathname)?.title;
+  const categoryTitle = categories.find((cat) => cat.href === pathname)?.title;
+
+  useEffect(() => {
+    if (!categoryTitle && pathname !== "/shop") {
+      router.push("/shop");
+    }
+  }, [categoryTitle, pathname, router]);
 
   if (pathname !== "/shop") {
     allProducts = products.filter(
-      (product) => product.category === catagorieTitle
+      (product) => product.category === categoryTitle
     );
-
-    console.log('not sop' , allProducts);
   }
 
   return (
-    <main className=" min-h-screen overflow-hidden">
+    <main className="min-h-screen overflow-hidden">
       <Header />
 
       {/* main container  */}
@@ -34,11 +40,11 @@ const Shop = () => {
           <SideNav />
         </div>
 
-        {/* products disply section  */}
+        {/* products display section  */}
         <section className="grid gap-5 lg:gap-20 pb-20">
           {/* title  */}
           <p className="text-4xl lg:text-5xl text-nowrap font-semibold capitalize">
-            {catagorieTitle ? catagorieTitle : "Catagorie Not Found!"}
+            {categoryTitle ? categoryTitle : "All Products"}
           </p>
 
           {/* products container  */}
@@ -56,7 +62,7 @@ const Shop = () => {
         </section>
       </div>
 
-      <Footer/>
+      <Footer />
     </main>
   );
 };
