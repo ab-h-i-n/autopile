@@ -1,27 +1,27 @@
 import React from "react";
-import Button from "../common/Button";
-import CatagoryCard from "../shop_by_catagory_section/CatagoryCard";
+import CatagoryCard from "./CatagoryCard";
+import Button from "../../common/Button";
 
-const OurServices = () => {
+const ShopByCatagory = () => {
   const catagories = [
     {
       src: "/images/cat-1.webp",
-      title: "Service 1",
+      title: "Engine",
       href: "#",
     },
     {
       src: "/images/cat-2.webp",
-      title: "Service 2",
+      title: "Suspension",
       href: "#",
     },
     {
       src: "/images/cat-3.webp",
-      title: "Service 3",
+      title: "Brakes",
       href: "#",
     },
     {
       src: "/images/cat-4.webp",
-      title: "Service 4",
+      title: "Transmission",
       href: "#",
     },
   ];
@@ -31,10 +31,10 @@ const OurServices = () => {
       {/* hedear  */}
       <div className="flex flex-col justify-center items-center gap-5 md:flex-row md:justify-between md:px-10 h-fit">
         {/* title  */}
-        <p className="text-3xl font-semibold lg:text-4xl">Our Services</p>
+        <p className="text-3xl font-semibold lg:text-4xl">Shop by Category</p>
         {/* shop button  */}
         <Button inverse={true} className={"px-10"}>
-          View All Services
+          Shop
         </Button>
       </div>
 
@@ -53,4 +53,4 @@ const OurServices = () => {
   );
 };
 
-export default OurServices;
+export default ShopByCatagory;

@@ -1,14 +1,16 @@
 import Image from "next/image";
 import React from "react";
-import Button from "../common/Button";
+import Button from "../../common/Button";
 
-const ProductCard = ({ image, name }) => {
+const ProductCard = ({ image, name, bestSeller }) => {
   return (
     <div className="w-[70%] aspect-[3/4.5] md:w-[300px] xl:w-[400px] grid gap-3 relative rounded overflow-hidden cursor-pointer group">
       {/* bestseller tag  */}
-      <div className="bg-teritiary px-5 py-2 absolute top-0 left-0 z-40 font-medium text-sm">
-        Best Seller
-      </div>
+      {bestSeller && (
+        <div className="bg-teritiary px-5 py-2 absolute top-0 left-0 z-40 font-medium text-sm">
+          Best Seller
+        </div>
+      )}
 
       {/* image  */}
       <div className="w-full aspect-[3/3.8] overflow-hidden rounded relative">
@@ -25,7 +27,12 @@ const ProductCard = ({ image, name }) => {
         {/* name  */}
         <p className="text-2xl font-semibold ">{name}</p>
         {/* button  */}
-        <Button className={"text-xs lg:text-xs md:text-sm h-fit group-hover:bg-teritiary group-hover:border-transparent mr-3"} inverse={true}>
+        <Button
+          className={
+            "text-xs lg:text-xs md:text-sm h-fit group-hover:bg-teritiary group-hover:border-transparent mr-3"
+          }
+          inverse={true}
+        >
           Buy Now
         </Button>
       </div>

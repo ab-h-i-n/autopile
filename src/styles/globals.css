@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -12,87 +11,101 @@
 ::-webkit-scrollbar-track {
   background-color: rgb(29, 29, 29);
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgb(213, 213, 213); 
+  background: rgb(213, 213, 213);
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #ffffff; 
+  background: #ffffff;
   cursor: grabbing;
 }
 
+.main-title {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
-.swipe-btn-prev::before{
+.swipe-btn-prev::before {
   content: "";
-  background-image: url('/images/arrow-left.svg');
+  background-image: url("/images/arrow-left.svg");
   background-size: cover;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  aspect-ratio: 1;
   display: block;
   position: absolute;
   top: 50%;
   left: 0;
   z-index: 40;
-  transform: translate(0px , -50%);
+  transform: translate(10px, -50%);
 }
 
-.swipe-btn-next::before{
+.swipe-btn-next::before {
   content: "";
-  background-image: url('/images/arrow-right.svg');
+  background-image: url("/images/arrow-right.svg");
   background-size: cover;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  aspect-ratio: 1;
   display: block;
   position: absolute;
   top: 50%;
   right: 0;
   z-index: 40;
-  transform: translate(0px,-50%);
+  transform: translate(-10px, -50%);
 }
 
-.review.swipe-btn-next::before{
+.review.swipe-btn-next::before {
   top: 105%;
   right: 20%;
 }
 
-.review.swipe-btn-prev::before{
+.review.swipe-btn-prev::before {
   top: 105%;
   left: 20%;
 }
 
-@media screen and (min-width: 1024px){
-
-  .swipe-btn-next::before{
-    transform: translate(-20px,-50%);
+@media screen and (min-width: 1024px) {
+  .swipe-btn-next::before {
+    transform: translate(-20px, -50%);
+    width: 40px
   }
 
-  .swipe-btn-prev::before{
-    transform: translate(20px,-50%);
+  .swipe-btn-prev::before {
+    transform: translate(20px, -50%);
+    width: 40px;
   }
-  
+
+  .review.swipe-btn-next::before {
+    top: 50%;
+    right: 0;
+    width: 40px;
+  }
+
+  .review.swipe-btn-prev::before {
+    top: 50%;
+    left: 0;
+    width: 40px;
+  }
 }
 
-@media screen and (min-width: 1440px){
-
-  .swipe-btn-next::before{
-    transform: translate(-50px,-50%);
+@media screen and (min-width: 1440px) {
+  .swipe-btn-next::before {
+    transform: translate(-50px, -50%);
   }
 
-  .swipe-btn-prev::before{
-    transform: translate(50px,-50%);
+  .swipe-btn-prev::before {
+    transform: translate(50px, -50%);
   }
-  
 }
 
-#vedio{
+#vedio {
   filter: sepia(10%) hue-rotate(190deg) saturate(200%);
   transition: all 0.5s;
   animation: move-up 1s ease;
-  animation-timeline: scroll() ;
-  animation-range: 0% 50%;
+  animation-timeline: scroll();
+  animation-range: 0% 100%;
 }
 
 @keyframes move-up {
@@ -100,6 +113,6 @@
     transform: translateY(0px);
   }
   to {
-    transform: translateY(-100px);
+    transform: translateY(-100%);
   }
 }
