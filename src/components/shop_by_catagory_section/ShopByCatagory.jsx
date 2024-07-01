@@ -27,10 +27,10 @@ const ShopByCatagory = () => {
   ];
 
   return (
-    <section className="min-h-screen px-5 py-10 grid gap-10 xl:gap-0">
+    <section className="min-h-screen px-5 py-10 grid gap-10 xl:gap-0 lg:py-20 z-10 bg-primary relative">
 
       {/* hedear  */}
-      <div className="flex flex-col justify-center items-center gap-5 md:flex-row md:justify-between md:px-10">
+      <div className="flex flex-col justify-center items-center gap-5 md:flex-row md:justify-between md:px-10 h-fit">
         {/* title  */}
         <p className="text-3xl font-semibold lg:text-4xl">Shop by Category</p>
         {/* shop button  */}

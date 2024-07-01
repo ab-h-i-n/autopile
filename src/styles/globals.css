@@ -86,3 +86,15 @@
   }
   
 }
+
+#vedio{
+  transition: all 0.5s;
+  animation: move-up 1s ease;
+  animation-timeline: scroll();
+}
+
+@keyframes move-up {
+  to {
+    transform: translateY(-500px);
+  }
+}

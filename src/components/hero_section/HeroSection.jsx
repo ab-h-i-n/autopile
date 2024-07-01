@@ -24,16 +24,16 @@ const HeroSection = () => {
   ];
 
   return (
-    <section className="min-h-screen overflow-hidden relative text-white">
+    <section className="min-h-screen overflow-hidden relative">
       {/* background vedio  */}
-      <div className="brightness-50 h-screen overflow-hidden">
+      <div id="vedio" className="brightness-90 h-screen overflow-hidden fixed z-[0] top-0 w-screen left-0">
         <video
           className="object-cover min-h-screen  pointer-events-none absolute top-0 "
           autoPlay
           loop
           muted
         >
-          <source src="/videos/video-1.mp4" type="video/mp4" />
+          <source src="/videos/video-1.webm" type="video/webm" />
         </video>
       </div>
 

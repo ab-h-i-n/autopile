@@ -30,8 +30,8 @@ const TopSellers = () => {
     },
   ];
 
-  return (
-    <section className="h-auto max-w-screen pt-20 pb-28">
+  return ( 
+    <section className="h-auto max-w-screen pt-20 pb-28 z-10 bg-primary relative">
       {/* title  */}
       <p className="text-3xl font-medium w-[80%] md:text-4xl lg:w-[50%] xl:text-5xl px-5 md:px-10 lg:px-20">
         Top Sellers

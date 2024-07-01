@@ -133,7 +133,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="py-20 px-10 xl:px-40 grid divide-y-[1px] divide-secondary divide-opacity-50 lg:py-10">
+    <footer className="py-20 px-10 xl:px-40 grid divide-y-[1px] divide-secondary divide-opacity-50 lg:py-10 z-10 bg-primary relative">
       {/* first section  */}
       <div className="grid place-items-center gap-10 lg:grid-flow-col py-5">
         {/* logo  */}

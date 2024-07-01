@@ -3,7 +3,7 @@ import Button from "../common/Button";
 
 const FifthSection = () => {
   return (
-    <section className='lg:min-h-[80vh] text-white  bg-[url("/images/fifth-section-bg.webp")] bg-cover bg-no-repeat px-5 py-20 grid items-center md:px-10 lg:px-20'>
+    <section className='lg:min-h-[80vh] text-white  bg-[url("/images/fifth-section-bg.webp")] bg-cover bg-no-repeat px-5 py-20 grid items-center md:px-10 lg:px-20 z-10 bg-primary relative'>
       <div>
         {/* titles  */}
         <div className="grid gap-3 h-fit divide-y-2">
