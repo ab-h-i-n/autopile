@@ -30,10 +30,9 @@ const HeroSection = () => {
         <video
           className="object-cover min-h-screen  pointer-events-none absolute top-0 "
           autoPlay
-          loop
           muted
         >
-          <source src="/videos/video-1.webm" type="video/webm" />
+          <source src="/videos/video-2.mp4" type="video/mp4" />
         </video>
       </div>
 
