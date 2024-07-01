@@ -6,7 +6,6 @@ import { usePathname } from "next/navigation";
 import Categories from "@/data/Categories";
 import Products from "@/data/Products";
 import ProductCard from "@/components/common/ProductCard";
-import Footer from "@/components/common/Footer";
 
 const Shop = () => {
   const router = useRouter();
@@ -31,8 +30,6 @@ const Shop = () => {
 
   return (
     <main className="min-h-screen overflow-hidden">
-      <Header />
-
       {/* main container  */}
       <div className="grid grid-cols-[15%,1fr] h-full mt-5 lg:mt-20 px-5 md:px-10 lg:px-14">
         {/* browses by */}
@@ -61,8 +58,6 @@ const Shop = () => {
           </div>
         </section>
       </div>
-
-      <Footer />
     </main>
   );
 };

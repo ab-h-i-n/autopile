@@ -7,7 +7,7 @@ const OurServices = () => {
   const services = Services;
 
   return (
-    <section className="min-h-screen px-5 py-10 grid gap-10 xl:gap-0 lg:py-20 z-10 bg-primary relative">
+    <section className="min-h-screen px-5 py-10 grid gap-10 xl:gap-0 lg:py-20 z-10 bg-primary relative  overflow-hidden">
       {/* hedear  */}
       <div className="flex flex-col justify-center items-center gap-5 md:flex-row md:justify-between md:px-10 h-fit">
         {/* title  */}
