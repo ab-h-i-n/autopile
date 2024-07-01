@@ -1,5 +1,5 @@
-
 import Footer from "@/components/common/Footer";
+import Header from "@/components/common/Header";
 import HeroSection from "@/components/OnBoarding/hero_section/HeroSection";
 import ProductReview from "@/components/OnBoarding/product_review_section/ProductReview";
 import OurServices from "@/components/OnBoarding/services_section/OurServices";
@@ -10,6 +10,7 @@ import TopSellers from "@/components/OnBoarding/top_sellers_section/TopSellers";
 export default function Home() {
   return (
     <main className={`bg-primary text-secondary `}>
+      <Header />
       <HeroSection />
       <OurServices />
       <ShopByCatagory />

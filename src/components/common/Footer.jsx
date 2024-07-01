@@ -133,7 +133,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="py-20 px-10 xl:px-40 grid divide-y-[1px] divide-secondary divide-opacity-50 lg:py-10 z-10 bg-primary relative">
+    <footer className="py-20 px-10 xl:px-34 grid divide-y-[1px] divide-secondary divide-opacity-50 lg:py-10 z-10 bg-primary relative">
       {/* first section  */}
       <div className="grid place-items-center gap-10 lg:grid-flow-col py-5">
         {/* logo  */}
@@ -207,7 +207,7 @@ const Footer = () => {
       </div>
 
       {/* copyright section  */}
-      <div className="text-center py-5 lg:py-10">© 2035 By Autopile</div>
+      <div className="text-center py-5 lg:pt-10">© 2035 By Autopile</div>
     </footer>
   );
 };

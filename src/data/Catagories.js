@@ -1,22 +1,22 @@
 export default [
   {
     src: "/images/cat-1.webp",
-    title: "Engine",
-    href: "#",
+    title: "engine",
+    href: "/shop/engine",
   },
   {
     src: "/images/cat-2.webp",
-    title: "Suspension",
-    href: "#",
+    title: "suspension",
+    href: "/shop/suspension",
   },
   {
     src: "/images/cat-3.webp",
-    title: "Brakes",
-    href: "#",
+    title: "brakes",
+    href: "/shop/brakes",
   },
   {
     src: "/images/cat-4.webp",
-    title: "Transmission",
-    href: "#",
+    title: "transmission",
+    href: "/shop/transmission",
   },
 ];

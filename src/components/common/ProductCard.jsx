@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const ProductCard = ({ image, name, bestSeller, id }) => {
   return (
-    <Link href={`/product/${id}`} className="w-[70%] aspect-[3/4.5] md:w-[300px] xl:w-[400px] grid gap-3 relative rounded overflow-hidden cursor-pointer group">
+    <Link href={`/product/${id}`} className="w-[90%] aspect-[3/4.5] grid gap-3 relative rounded overflow-hidden cursor-pointer group">
       {/* bestseller tag  */}
       {bestSeller && (
         <div className="bg-teritiary px-5 py-2 absolute top-0 left-0 z-40 font-medium text-sm">

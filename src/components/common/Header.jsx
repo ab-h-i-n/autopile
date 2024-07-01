@@ -9,7 +9,7 @@ const Header = () => {
   const navItems = [
     {
       title: "Shop Parts",
-      link: "#",
+      link: "/shop",
     },
     {
       title: "Wholesale",
@@ -28,7 +28,7 @@ const Header = () => {
   const [isOpen, toggleOpen] = useCycle(false, true);
 
   return (
-    <header className="flex items-center justify-between relative z-50 py-10">
+    <header className="flex items-center justify-between relative z-50 py-10 px-5 md:px-10 lg:px-14 xl:px-28">
       {/* logo  */}
       <Link
         href={"/"}
@@ -49,12 +49,15 @@ const Header = () => {
         isOpen={isOpen}
         toggleOpen={toggleOpen}
         className={"md:hidden"}
-        color={isOpen ? "black" : "white"}
+        color={"black"}
       />
+
+      {/* backdrop for nav  */}
+      <div className={`fixed top-0 left-0 w-screen h-screen bg-black opacity-50 transition-all duration-300 z-30 ${!isOpen && 'opacity-0' } lg:hidden pointer-events-none`}></div>
 
       {/* nav  */}
       <nav
-        className={`z-40 absolute top-0 right-0 w-[95vw] h-screen flex flex-col bg-primary py-10 px-5 gap-10 transition-all ${
+        className={`z-40 absolute top-0 right-0 w-[95vw] h-screen flex flex-col bg-primary py-10 px-5 gap-10 transition-all duration-300 ${
           !isOpen ? "translate-x-[110%]" : "translate-x-[10%]"
         } md:flex-row md:static md:translate-x-0 md:w-auto md:h-auto md:bg-transparent md:gap-5 md:p-0`}
       >
