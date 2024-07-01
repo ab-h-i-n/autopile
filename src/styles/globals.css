@@ -90,11 +90,15 @@
 #vedio{
   transition: all 0.5s;
   animation: move-up 1s ease;
-  animation-timeline: scroll();
+  animation-timeline: scroll() ;
+  animation-range: 0% 50%;
 }
 
 @keyframes move-up {
+  from {
+    transform: translateY(0px);
+  }
   to {
-    transform: translateY(-500px);
+    transform: translateY(-100px);
   }
 }
