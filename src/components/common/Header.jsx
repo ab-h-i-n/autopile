@@ -53,7 +53,11 @@ const Header = () => {
       />
 
       {/* backdrop for nav  */}
-      <div className={`fixed top-0 left-0 w-screen h-screen bg-black opacity-50 transition-all duration-300 z-30 ${!isOpen && 'opacity-0' } lg:hidden pointer-events-none`}></div>
+      <div
+        className={`${
+          isOpen ? "opacity-50" : "opacity-0"
+        } fixed top-0 left-0 w-screen h-screen bg-black transition-all duration-300 z-30 lg:hidden pointer-events-none`}
+      ></div>
 
       {/* nav  */}
       <nav
