@@ -10,7 +10,7 @@ const ProductPage = () => {
 
   return (
     <main className="min-h-screen">
-      <h1>Current Pathname: {product.name}</h1>
+      <h1>Current Pathname: {product?.name}</h1>
     </main>
   );
 };
