@@ -1,4 +1,4 @@
-"use client";
+
 import Products from "@/data/Products";
 import { usePathname } from "next/navigation";
 import React from "react";
