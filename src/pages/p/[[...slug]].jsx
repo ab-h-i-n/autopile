@@ -1,6 +1,7 @@
+"use client";
 import Products from "@/data/Products";
 import { usePathname } from "next/navigation";
-import React, { useEffect } from "react";
+import React from "react";
 
 const ProductPage = () => {
   const products = Products;
